@@ -16,7 +16,7 @@ class List extends Component {
         this.setState({ todolist: todoList });
     }
 
-    hideClick(e) {
+    hideClick() {
         let taskInput = document.querySelector('input[type=text]');
 
         if (taskInput.style.display === "none") {
