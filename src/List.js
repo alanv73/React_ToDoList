@@ -48,9 +48,7 @@ class List extends Component {
     }
 
     render() {
-        console.log(this.state.todolist);
         var todoListItems = this.state.todolist.map((item, index) => {
-            console.log(item);
             return (
                 <Item handleDelete={this.deleteItem} todoItem={item} index={index} />
             );
